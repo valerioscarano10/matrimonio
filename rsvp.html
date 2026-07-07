@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerio & Giusy — RSVP</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #fcfbfa; text-align: center; }
+        nav { background-color: #ffffff; position: fixed; width: 100%; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 1000; padding: 15px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #555; font-weight: 600; }
+        .container { padding: 120px 20px 60px 20px; max-width: 600px; margin: 0 auto; }
+        h1 { color: #b58d3d; font-weight: 400; }
+        form { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); text-align: left; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #b58d3d; color: white; border: none; padding: 12px 30px; font-size: 1rem; border-radius: 4px; cursor: pointer; width: 100%; }
+        button:hover { background-color: #947230; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="storia.html">La Nostra Storia</a>
+        <a href="programma.html">Il Programma</a>
+        <a href="rsvp.html">Conferma (RSVP)</a>
+        <a href="regali.html">Lista Nozze</a>
+    </nav>
+
+    <div class="container">
+        <h1>Conferma la tua Presenza</h1>
+        <p>Vi chiediamo gentilmente di darci conferma entro la data stabilita.</p>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome e Cognome dei partecipanti</label>
+                <input type="text" id="nome" name="nome" required placeholder="Es. Mario Rossi e Famiglia">
+            </div>
+
+            <div class="form-group">
+                <label for="scelta">Sarete dei nostri?</label>
+                <select id="scelta" name="scelta" required>
+                    <option value="">Scegli un'opzione</option>
+                    <option value="si">Sì, accettiamo con gioia!</option>
+                    <option value="no">Purtroppo non potremo esserci</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="note">Allergie, intolleranze o menu bambini?</label>
+                <textarea id="note" name="note" rows="3" placeholder="Es. 1 celiaco, 1 vegetariano..."></textarea>
+            </div>
+
+            <button type="submit">Invia Conferma</button>
+        </form>
+    </div>
+
+</body>
+</html>
