@@ -6,12 +6,43 @@
     <title>Valerio & Giusy — Il Programma</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #333; background-color: #fcfbfa; text-align: center; }
+        
+        /* Menu di navigazione */
         nav { background-color: #ffffff; position: fixed; width: 100%; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 1000; padding: 15px 0; }
         nav a { margin: 0 15px; text-decoration: none; color: #555; font-weight: 600; }
+        nav a:hover { color: #b58d3d; }
+        
         .container { padding: 120px 20px 60px 20px; max-width: 800px; margin: 0 auto; }
         h1 { color: #b58d3d; font-weight: 400; }
-        .event-card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin: 20px auto; max-width: 500px; }
-        .btn-maps { display: inline-block; background-color: #b58d3d; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-top: 15px; font-size: 0.9rem; }
+        .subtitle { color: #777; margin-bottom: 40px; }
+        
+        /* Carta dell'evento */
+        .event-card { 
+            background: white; 
+            padding: 40px 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            margin: 20px auto; 
+            max-width: 550px; 
+        }
+        .event-card h2 { color: #444; font-weight: 400; margin-top: 0; }
+        .time { font-size: 1.3rem; color: #b58d3d; font-weight: bold; margin: 10px 0; }
+        .location-name { font-size: 1.1rem; font-weight: 600; color: #333; }
+        
+        /* Pulsante per Google Maps */
+        .btn-maps { 
+            display: inline-block; 
+            background-color: #b58d3d; 
+            color: white; 
+            padding: 12px 25px; 
+            text-decoration: none; 
+            border-radius: 4px; 
+            margin-top: 25px; 
+            font-size: 0.95rem; 
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn-maps:hover { background-color: #947230; }
     </style>
 </head>
 <body>
@@ -26,20 +57,15 @@
 
     <div class="container">
         <h1>Il Programma del Grande Giorno</h1>
-        <p>Ecco tutti i dettagli su orari e luoghi dei festeggiamenti.</p>
+        <p class="subtitle">Ecco i dettagli e le indicazioni per raggiungerci e festeggiare insieme.</p>
 
         <div class="event-card">
-            <h2>La Cerimonia</h2>
-            <p><strong>Orario da definire</strong></p>
-            <p>Ci scambieremo le promesse presso il luogo scelto.</p>
-            <a href="https://maps.google.com" target="_blank" class="btn-maps">Apri su Google Maps 📍</a>
-        </div>
-
-        <div class="event-card">
-            <h2>Il Ricevimento</h2>
-            <p><strong>A seguire</strong></p>
-            <p>Festeggeremo insieme ad amici e parenti.</p>
-            <a href="https://maps.google.com" target="_blank" class="btn-maps">Apri su Google Maps 📍</a>
+            <h2>La Cerimonia & Il Ricevimento</h2>
+            <div class="time">Ore 18:00</div>
+            <p>Siamo felici di accogliervi per celebrare il nostro matrimonio e, a seguire, festeggiare insieme presso la splendida:</p>
+            <p class="location-name">Masseria Amastuola<br><span style="font-weight: normal; font-size: 0.95rem; color: #666;">Crispiano (TA)</span></p>
+            
+            <a href="https://www.google.com/maps/place/Masseria+Amastuola+Wine+Resort/@40.5902449,17.047998,12.57z/data=!4m9!3m8!1s0x134706e73f668873:0xaa68faee7af38b1d!5m2!4m1!1i2!8m2!3d40.5793045!4d17.1706371!16s%2Fg%2F11bwc0p37v?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-maps">Ottieni Indicazioni Stradali 📍</a>
         </div>
     </div>
 
